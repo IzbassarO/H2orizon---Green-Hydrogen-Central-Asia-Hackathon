@@ -125,7 +125,8 @@ export default function ExportPage() {
             <div className="flex gap-5 mt-3 pt-3 text-[11px]" style={{ borderTop: "1px solid var(--border)" }}>
               <span className="text-text-3">Total: <b className="text-text-1">~2,500–3,000 km</b></span>
               <span className="text-text-3">Transit: <b className="text-text-1">7–10 days</b></span>
-              {typeof tankerTrips === "number" && <span className="text-text-3">Tanker trips: <b className="text-amber">{tankerTrips}/yr</b></span>}
+              <span className="text-text-3">Tunker numbers: <b className="text-text-1">12-13</b></span>
+              <span className="text-text-3">Tunker per volume: <b className="text-text-1"> 1 tunker per 20t</b></span>
             </div>
           </Card>
 
