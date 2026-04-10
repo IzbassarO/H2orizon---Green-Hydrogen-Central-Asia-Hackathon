@@ -78,7 +78,7 @@ export default function LeafletMap({ onRegionClick, selectedId }: Props) {
         </>) : (
           <div className="rounded-lg p-6 md:p-8 text-center" style={{background:"var(--bg-card)",border:"1px solid var(--border)"}}>
             <div className="text-[36px] opacity-10 mb-2">🗺</div>
-            <div className="text-[13px] text-text-2">Нажмите на точку</div>
+            <div className="text-[13px] text-text-2">Click on a point</div>
           </div>
         )}
       </div>
