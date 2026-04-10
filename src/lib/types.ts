@@ -52,4 +52,4 @@ export interface EvidenceEntry {
   confidence: "HIGH" | "MEDIUM";
 }
 
-export type PageId = "landing" | "regional" | "plant" | "export" | "transport" | "route-builder" | "decision" | "data" | "evidence" | "mlscore";
+export type PageId = "landing" | "regional" | "plant" | "export" | "transport" | "route-builder" | "decision" | "data" | "evidence" | "mlscore" | "chemistry";
