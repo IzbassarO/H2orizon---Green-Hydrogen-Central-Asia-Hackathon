@@ -9,9 +9,8 @@ export default function TransportPage() {
     <div className="p-4 md:p-7">
       <Topbar title="Transport Matrix" subtitle="Compare hydrogen carrier technologies for Central Asia–Europe corridors" badge="5 Methods" badgeVariant="teal" />
 
-      {/* Cards - horizontal scroll on mobile */}
-      <div className="overflow-x-auto pb-3 mb-6">
-        <div className="flex gap-3" style={{ minWidth: "max-content" }}>
+      <div className="-mx-4 px-4 md:mx-0 md:px-0 overflow-x-auto pb-3 mb-6">
+        <div className="flex gap-3 min-w-max">
           {methods.map(m => (
             <div key={m.name} className="rounded-lg p-4 w-[220px] shrink-0" style={{ background: "var(--bg-card)", border: "1px solid var(--border)" }}>
               <div className="font-head text-[11px] mb-3" style={{ color: m.color }}>{m.name}</div>
@@ -23,9 +22,9 @@ export default function TransportPage() {
                 { l: "Max dist.", v: `${m.distanceMax.toLocaleString()} km` },
                 { l: "Lead time", v: m.leadTime },
               ].map(r => (
-                <div key={r.l} className="flex justify-between py-1 text-[11px]" style={{ borderBottom: "1px solid var(--border)" }}>
+                <div key={r.l} className="flex justify-between gap-3 py-1 text-[11px]" style={{ borderBottom: "1px solid var(--border)" }}>
                   <span className="text-text-2">{r.l}</span>
-                  <span className="font-head text-text-1">{r.v}</span>
+                  <span className="font-head text-text-1 whitespace-nowrap">{r.v}</span>
                 </div>
               ))}
               <div className="mt-3 text-[10px] text-text-3">{m.infraReq}</div>
@@ -35,10 +34,9 @@ export default function TransportPage() {
         </div>
       </div>
 
-      {/* Table - horizontal scroll */}
       <Card title="Suitability for Central Asia → Europe">
-        <div className="overflow-x-auto">
-          <table className="w-full text-[12px]" style={{ borderCollapse: "collapse", minWidth: 700 }}>
+        <div className="-mx-4 px-4 md:mx-0 md:px-0 overflow-x-auto">
+          <table className="w-full text-[12px] min-w-[700px]" style={{ borderCollapse: "collapse" }}>
             <thead>
               <tr>{["Method","Efficiency","Loss","CAPEX","Distance fit","Lead time","Verdict"].map(h=>(
                 <th key={h} className="text-left py-2 px-3 font-head text-[10px] text-text-2 uppercase whitespace-nowrap"
@@ -51,12 +49,12 @@ export default function TransportPage() {
                 return (
                   <tr key={m.name}>
                     <td className="py-2 px-3 font-medium whitespace-nowrap" style={{color:m.color,borderBottom:"1px solid var(--border)"}}>{m.name}</td>
-                    <td className="py-2 px-3 font-head text-green" style={{borderBottom:"1px solid var(--border)"}}>{m.efficiency}%</td>
-                    <td className="py-2 px-3 font-head" style={{color:m.energyLoss>30?"#f87171":"#f5a623",borderBottom:"1px solid var(--border)"}}>{m.energyLoss}%</td>
+                    <td className="py-2 px-3 font-head text-green whitespace-nowrap" style={{borderBottom:"1px solid var(--border)"}}>{m.efficiency}%</td>
+                    <td className="py-2 px-3 font-head whitespace-nowrap" style={{color:m.energyLoss>30?"#f87171":"#f5a623",borderBottom:"1px solid var(--border)"}}>{m.energyLoss}%</td>
                     <td className="py-2 px-3 text-text-2 whitespace-nowrap" style={{borderBottom:"1px solid var(--border)"}}>{m.capex}</td>
-                    <td className="py-2 px-3" style={{borderBottom:"1px solid var(--border)"}}>
+                    <td className="py-2 px-3 whitespace-nowrap" style={{borderBottom:"1px solid var(--border)"}}>
                       <div className="flex items-center gap-2">
-                        <div className="w-[60px] h-[4px] rounded-sm" style={{background:"var(--bg-3)"}}>
+                        <div className="w-[60px] h-[4px] rounded-sm shrink-0" style={{background:"var(--bg-3)"}}>
                           <div className="h-[4px] rounded-sm" style={{width:`${m.distanceSuitable}%`,background:m.color}}/>
                         </div>
                         <span className="text-text-2">{m.distanceSuitable}%</span>
