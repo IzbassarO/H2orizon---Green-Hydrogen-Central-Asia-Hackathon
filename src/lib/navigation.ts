@@ -19,5 +19,5 @@ export const NAV_ITEMS: NavItem[] = [
   { id: "data", label: "Data Explorer", section: "Data & Strategy", href: "/data-explorer", icon: "M1 3h14v10H1zM1 6h14M5 3v10M10 3v10" },
   { id: "evidence", label: "Evidence Base", section: "Data & Strategy", href: "/evidence", icon: "M4 2h8a1 1 0 011 1v11l-4-2-4 2V3a1 1 0 011-1z" },
   { id: "mlscore", label: "AI Site Scorer", section: "AI Analysis", href: "/ai-scorer", icon: "M8 1v3M8 12v3M3.5 3.5l2 2M10.5 10.5l2 2M1 8h3M12 8h3" },
-  { id: "chemistry", label: "Chemistry", section: "chemistry", href: "/chemistry", icon: "M8 1v3M8 12v3M3.5 3.5l2 2M10.5 10.5l2 2M1 8h3M12 8h3" },
+  { id: "chemistry", label: "Chemistry", section: "Process & Chemistry", href: "/chemistry", icon: "M8 1v3M8 12v3M3.5 3.5l2 2M10.5 10.5l2 2M1 8h3M12 8h3" },
 ];
