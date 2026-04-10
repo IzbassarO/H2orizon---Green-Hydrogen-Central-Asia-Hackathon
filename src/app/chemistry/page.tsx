@@ -250,39 +250,6 @@ export default function ChemistryPage() {
           </div>
         ))}
       </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <Card title="Suggested Visual Layout">
-          <div className="space-y-3 text-[12px] text-text-2 leading-relaxed">
-            <div>
-              <span className="font-head text-text-1">Block 1:</span> Water → Electrolyzer → H₂ + O₂
-            </div>
-            <div>
-              <span className="font-head text-text-1">Block 2:</span> H₂ → Compression / Storage
-            </div>
-            <div>
-              <span className="font-head text-text-1">Block 3:</span> H₂ → NH₃ synthesis / LOHC / LH₂
-            </div>
-            <div>
-              <span className="font-head text-text-1">Block 4:</span> Export logistics → Destination recovery
-            </div>
-            <div>
-              Use arrows, small icons, and one highlighted formula per block. Keep the page dark,
-              technical, and simple like the rest of the platform.
-            </div>
-          </div>
-        </Card>
-
-        <Card title="Where Chemistry Matters in the Project">
-          <div className="space-y-2 text-[12px] text-text-2 leading-relaxed">
-            <div>• Plant page: electrolysis chemistry and hydrogen yield</div>
-            <div>• Export page: conversion losses for NH₃, LH₂, and LOHC routes</div>
-            <div>• Transport matrix: storage/handling compatibility by carrier</div>
-            <div>• Decision engine: chemistry-linked efficiency penalties</div>
-            <div>• Evidence/data pages: process assumptions, reaction conditions, and reference values</div>
-          </div>
-        </Card>
-      </div>
     </div>
   );
 }
